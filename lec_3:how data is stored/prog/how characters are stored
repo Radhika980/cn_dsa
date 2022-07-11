@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	   
+	    int minn=Integer.MIN_VALUE;
+	    int maxx=Integer.MAX_VALUE;
+		System.out.println(minn+ " "+maxx);
+		char ch='a';
+		System.out.println(ch);
+		System.out.println(ch+3);
+	}
+}
