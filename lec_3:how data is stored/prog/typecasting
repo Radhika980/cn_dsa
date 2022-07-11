@@ -1,0 +1,18 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		char ch='a';
+		//implicit conversion
+		int i=ch;//can be done as char take 2 bytes and int takes 4 byte so 2 byte can come in 4 bytes
+		//ch=i;//cannot be sone as int takes 4 and cant be adjusted in 2 bytes
+		ch=(char)i;//explicitly defined conversion
+		System.out.println(ch);
+		System.out.println(ch+3);
+		//ch=ch+1;//not possible
+		//ch=(char)ch+1;
+		System.out.println(4+4);
+		System.out.println(4+4.0);
+		System.out.println((float)4/14);
+	}
+}
