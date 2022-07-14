@@ -1,0 +1,50 @@
+import java.util.*;
+public class Solution {
+    
+    public static void main(String[] args)
+    {
+        
+       Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+        int n1=(n+1)/2;
+        int n2=n-n1;
+     
+	   for(int i=1;i<=n1;i++)
+	  {
+	      for(int j=1;j<=n1-i;j++)
+	      {
+	       
+	         System.out.print(" ");
+        
+	       }
+           
+	        for(int k=1;k<=2*i-1;k++)
+	        {
+	         System.out.print("*");
+	        }
+          
+	        System.out.println(); 
+     }
+        
+        
+        for(int ik=n2;ik>=1;ik--)
+	  {
+	      for(int jk=1;jk<=n2-ik+1;jk++)
+	      {
+	       
+	         System.out.print(" ");
+        
+	       }
+
+	        for(int ks=1;ks<=2*ik-1;ks++)
+	        {
+	         System.out.print("*");
+	        }
+           
+	        System.out.println(); 
+     }
+           
+	     
+	}
+        
+    }
