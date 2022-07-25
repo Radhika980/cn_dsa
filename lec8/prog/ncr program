@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main 
+{
+	
+	public static void main(String[] args) 
+    {
+		// Write your code here
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int r=sc.nextInt();
+        int factn=1;
+        for(int i=1;i<=n;i++)
+        {
+            factn=factn*i;
+        }
+        int factr=1;
+        for(int i=1;i<=r;i++)
+        {
+            factr=factr*i;
+        }
+        int factnr=1;
+        for(int i=1;i<=n-r;i++)
+        {
+            factnr=factnr*i;
+        }
+        int ans=factn/(factr*factnr);
+        System.out.print(ans);     
+    }
+}
+
